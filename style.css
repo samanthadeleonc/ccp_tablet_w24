@@ -1,0 +1,131 @@
+.grid-container {
+    display: grid;
+}
+
+.responsive {
+    max-width: 100%;
+    height: auto;
+  }
+.pics {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    
+}
+.travel-intro {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    column-gap: 40px;
+}
+.travel-gallery {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    column-gap: 20px;
+    row-gap: 20px;
+}
+.pet-intro {
+    justify-content: center;
+}
+.index-boxes {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    padding: 10px 10px 10px;
+    margin: 50px 50px;
+
+    justify-content: center;
+}
+
+h1 {
+    text-align: center;
+    font-size: 60px;
+    font-family: impact;
+    color: palevioletred;
+}
+
+.skip {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+.skip:focus {
+    position: static;
+    width: auto;
+    height: auto;
+}
+
+a:link, a:visited {
+    display: grid;
+    background-color: #E87AE6;
+    color: black;
+    padding: 14px 25px;
+    margin: 10px;
+    text-align: center;
+    text-decoration: none;
+}
+  
+a:hover {
+    background-color: cyan;
+}
+
+a:active {
+    background-color: cyan;
+}
+
+h3 {
+    text-align: center;
+    font-size: 20px;
+    text-decoration: underline;
+    margin: 15px;
+}
+.h3-pic {
+    justify-content: center;
+}
+
+div {
+    display: grid;
+    background-color: #761467;
+    color: #FFFFFF;
+    padding: 14px 25px;
+    margin: 10px;
+    text-align: center;
+    text-decoration: none;
+}
+
+ul {
+    background: #E87AE6;
+    color: black;
+    padding: 20px 20px 20px 50px;
+    text-align: left;
+    list-style-type: square;
+  }
+
+
+#navigation li a.current{
+    color: cyan;
+    background: black;
+ }
+
+/*Tablet View*/
+
+@media screen and (min-width: 800px) {
+    nav {
+        float: left;
+        position: fixed;
+    }
+    #navigation li {
+        height: 80px;
+        
+    }
+    main {
+        margin-left: 200px;
+    }
+    h1 {
+        margin-left: 200px;
+    }
+
+  }
